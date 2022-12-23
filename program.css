@@ -144,15 +144,18 @@ ul{
     padding-left:15px ;
     list-style-image: url(tick.png);
 }
-.foot{
-    color: aqua;
-  background: -webkit-linear-gradient(yellow green);
-    margin-left: 60px;
-    justify-content: center;
-    width: 1220 px;
-}
 .foot a{
     text-decoration: none;
+    color: azure;
+    padding-left: 450px;
+}
+.foot{
+    color: aqua;
+   height: 60px;
+   background: linear-gradient(#97d65d, #cc9adb);
+   background: -webkit-linear-gradient(#97d65d, #cc9adb);
+   padding: 10px 30px;
+   margin-top: 15px
 }
 
 
