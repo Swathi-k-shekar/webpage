@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+   
+}
+
+*body,
+html {
+    margin: 0;
+    padding: 0;
+    
+}
+
+form {
+    display: flex;
+    background-color: rgb(220, 192, 223);
+    flex-direction: column;
+    height: 100vh;
+    padding: 10px;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+ textarea,input,select{
+    background-color: aquamarine;
+    border-radius: 10px;
+}
+.detials {
+    flex: 3;
+}
+
+.address .form-group {
+    margin: 20px;
+    display: flex;
+}
+.address .form-group label {
+   flex: 1;
+   text-align: right;
+   margin-right: 1em;
+}
+.address .form-group input {
+    flex: 3;
+    font-size: 1em;
+ }
+.shipping{
+    margin: 20px;
+    text-align: center;
+}
+.shipping select{
+    font-size: 1em;
+    margin-top:1em;
+}
+.mpay{
+    text-align: center;
+}
+.mpay div:nth-child(2){
+    display: flex;
+    
+}
+.mpay div:nth-child(2) label{
+    /* display: flex; */
+    margin-top: 0.5em;
+    flex: 1;
+    text-align: center;
+    
+}
+.checks{
+    display: flex; 
+}
+.checks label{
+    flex: 1;
+}
+.comment {
+    /* background-color: rgb(74, 209, 77); */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.comment textarea {
+/* background-color: rgb(121, 195, 195); */
+background-color: aquamarine;
+
+}
+
+.submit {
+    margin-top: auto;
+    /* background-color: rgb(60, 196, 65); */
+    text-align: center;
+
+}
+button{
+    background-color: rgb(60, 196, 65);
+    border: none;
+    width: 100%;
+    font-size: 2em;
+    color: azure;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check out Form</title>
+    <link rel="stylesheet" href="checkoutform.css">
+    <link rel="stylesheet" href="welcome.py">
+</head>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Amazon Checkout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="checkoutform.css">
+</head>
+
+<body>
+    <form action="post">
+        <div class="container">
+
+            <div class="detials">
+
+                <div class="address">
+                    <div class="form-group">
+                        <label for="address">Address:</label>
+                        <input type="text" name="address" id="address" placeholder="Address" size="30px" maxlength="100">
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Postcode:</label>
+                        <input type="text" name="postcode" id="postcode" placeholder="Postcode" size="30px" maxlength="100">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">City:</label>
+                        <input type="text" name="city" id="city" placeholder="City" size="30px" maxlength="100">
+                    </div>
+                </div>
+                <div class="shipping">
+                  <div>Choose the shipping mehood:</div> 
+                  <div>
+                    <select name="shipping" id="shipping">
+                        <option value="Free super saver shipping">Free super saver shipping</option>
+                        <option value="Two-Day shipping">Two-Day shipping</option>
+                        <option value="One-Day shipping">One-Day shipping</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="mpay">
+                    <div>Choose the pay ment methood:</div>
+                    <div>
+                        <label>Paypal<input type="radio" name="payment" value="paypal"></label>
+                        <label>Debit Card<input type="radio" name="payment" value="debit card"></label>
+                        <label>Credit Card<input type="radio" name="payment" value="credit card"></label>
+                    </div>
+                </div>
+                <div class="checks">
+                 <label >Sign me up for e mail updates <input type="checkbox" name="email updates" checked="checked"></label> 
+                 <label >Securely save my payment detials <input type="checkbox" name="save payment" checked="checked"></label>  
+                </div>
+            </div>
+            <div class="comment">
+                 <label for="comments">Comments</label>
+                    <textarea rows="4" cols="40" name="comments" id="comments"></textarea>
+            
+            </div>
+        </div>
+        <div class="submit">
+         <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+
+</html>
