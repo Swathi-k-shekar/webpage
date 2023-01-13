@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN FORM</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<style>
+    body{
+        box-sizing: border-box;
+       background-color: rgba(153, 199, 242, 0.839);
+    }
+    .logo{
+        display: flex;
+        background-color:black ;
+       color: azure;
+       width: 500px ;
+       justify-self: center;
+       justify-content: center;
+    }
+    .box{
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: larger;
+        border: 1px solid rebeccapurple;  
+    }
+    /*.expli{
+        display: flex;
+        flex-wrap: wrap-reverse;
+    } */
+    /*form{
+        background-color: rgb(230, 226, 169);
+    }*/
+    .container1{
+        background-color: rgb(250, 249, 215);
+        flex-basis: 50%;
+        display: flex;
+        align-items: center;   
+    }
+    .container2{
+        background-color: rgb(202, 160, 217);
+        display: flex;
+        align-items: center;
+        flex-basis: 50%;
+    }
+    @media screen and (max-width:700px) {
+        .container2{
+            display: flex;
+            flex: 100%;
+        }
+        .container1{
+            display: flex;
+            flex: 100%;
+        }
+        .logo{
+            display: flex;
+            flex: 100%;
+            align-items: center;
+        }
+
+    }
+    .box h1,h4{
+        margin-left: 50px;
+    }
+    .box p{
+        margin-left: 13px;
+    }
+    .box input{
+        /*border: 1px solid;
+        border-radius:7px;*/
+        width: 300px;
+        height: 40px;
+        margin-left: 30px;
+        background-color: rgb(6, 5, 45);
+    }
+    .box button{
+        margin-top: 20%;
+        margin-left: 80px;
+        margin-bottom: 50px;
+        border-radius: 9px;
+        background-color: rgb(117, 117, 233);
+    }  
+</style>
+<body>
+    <script type="text/javascript">
+        alert("WELCOME TO RATION MANAGEMENT WEBSITE");
+    </script>
+    <div class="logo">
+        <h1>Ration Mangement System</h1>
+    </div>
+    <div class="box">
+    <div class="container1">
+        <form action="#" method="post">
+            <h1>Login Here</h1>
+            <p>User Name</p>
+            <input type="text" placeholder="user name">
+            <p>Password</p>
+            <input type="Password" placeholder="password"><br>
+            <button onclick="alert('PYTHON CODE GOES HERE');">login</button>
+        </form>
+    </div>
+    <div class="container2">
+        <form action="#" method="post">
+            <h4> Don't have an Account </h4>
+            <h1>Sign-in</h1>
+            <p>User Name</p>
+            <input type="text" placeholder="user name">
+            <p>Password</p>
+            <input type="Password" placeholder="password"><br>
+            <button
+            onclick="alert('PYTHON CODE GOES HERE');">Signin</button>
+        </form>
+    </div>
+    </div>
+    
+</body>
+</html>
