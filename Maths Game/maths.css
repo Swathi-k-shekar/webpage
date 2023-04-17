@@ -1,0 +1,179 @@
+html{
+    height: 100%;
+    background:-webkit-radial-gradient(circle,#e4bde9, rgba(231, 149, 162, 0.76));
+}
+#container{
+height: 600px;
+width: 790px;
+background: rgb(170, 123, 213);
+margin: 80px auto;
+padding: 10px;
+border-radius: 20px;
+/* box-shadow:[horizontal offset ] [verticle offset ] [blur radius] [size ] [color]; */
+box-shadow: 5px 5px 0px 0px rgb(84, 10, 154);
+position: relative;
+
+}
+
+
+#score{
+    height: 10px;
+    width: 100px;
+   background: rgb(244, 244, 6); 
+   margin: 10px auto;
+   font-size: larger;
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   color: black;
+   padding: 10px;
+   position: relative;
+   line-height: 7px;
+   left: 300px;
+   box-shadow: 1px 1px 14px greenyellow;
+}
+
+#correct{
+    background: green; 
+    font-size: larger;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+    padding: 10px;
+    position: absolute;
+    left: 360px;
+    box-shadow: 1px 1px 0px rgb(186, 90, 48);
+    display: none;
+ }
+ #wrong{
+    background: red; 
+    font-size: larger;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+    padding: 10px;
+    position: absolute;
+    left: 360px;
+    box-shadow: 1px 1px 0px rgb(73, 113, 13);
+    display: none;
+ }
+ #question{
+   top: 500px;
+    margin: 10px auto 10px auto;
+    width: 660px; 
+    height: 200px; 
+    font-weight: bolder;
+    font-size: 100px;
+    text-align: center;
+    line-height: 200px;
+    background-color: aqua;
+    box-shadow: 3px 3px 0px  rgb(4, 145, 145);
+
+ }
+#instruction{
+    width:660px;
+    height: 60px;
+    background-color: bisque;
+    box-shadow: 5px 5px 0px  rgb(11, 46, 161);
+    margin: 10px auto 10px auto;
+    font-weight: bolder;
+    font-size: xx-large;
+    text-align: center;
+    line-height: 60px;
+
+}
+#choices{
+    
+    width: 660px;
+    height: 60px;
+    margin: 10px auto 10px auto;
+}
+
+.box{
+    width: 130px ;
+    background-color: azure;
+    font-size: 70px;
+    height: 150px;
+    float: left;
+    margin-right: 46px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 3px 3px 0px  rgb(229, 236, 47);
+    text-align: center;
+    line-height: 150px;
+    position: relative;
+    -webkit-transition: all 0.2s;
+}
+/* .box:hover{
+    background-color:rgb(184, 91, 197) ;
+    color: azure;
+    box-shadow: 3px 3px purple;
+
+} */
+ /* if we using touch screen gadgets it helps in effecient user experience */
+.box:active{
+    background-color:rgb(184, 91, 197) ;
+    color: azure;
+    box-shadow: 3px 3px purple;
+    box-shadow: 0px 0px purple;
+    top: 4px;
+}
+#box4{
+    margin-right: 0;
+}
+#start{ width: 130px ;
+    font-size: large;
+    background-color: rgb(66, 209, 209);
+   padding: 10px;
+    height: 15px;
+    float: right;
+    margin: 40px  400px  10px;
+    cursor: pointer;
+    text-align: center;
+   line-height: 18px;
+   box-shadow: 1px 1px rgb(8, 123, 195);
+   -webkit-transition: all 0.2s;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   /* top: 580px ;
+   left: 200px ; */
+}
+#start:hover{
+    background-color:rgb(103, 53, 156) ;
+    color: azure;
+    box-shadow: 3px 3px rgb(79, 118, 191);
+
+}
+#start:active{
+    box-shadow: 0px 0px rgb(127, 47, 158);
+    top: 4px;
+}
+#timeCount{
+    font-size: large;
+    width: auto ;
+    background-color: rgb(231, 226, 120);
+    padding: 10px;
+    height: 15px;
+    cursor: pointer;
+    text-align: center;
+   line-height: 16px;
+   position: absolute;
+   top: 580px ;
+   left: 600px ;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   /* visibility: hidden; */
+   /* other elements treats it doesnt exsits */
+   display: none;
+}
+#gameOver{
+    top: 200px;
+    left: 200px;
+    height: 300px;
+    width: 500px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    text-align: center;
+    line-height: 100px;
+    font-size: xx-large;
+   background: -webkit-linear-gradient(rgba(225, 202, 90, 0.833),rgb(227, 152, 59),rgb(170, 123, 22));
+   color: bisque;
+   text-transform: uppercase;
+   z-index: 2;
+   /* z index makes sure that elements comes top other elements  */
+   display: none;
+}
